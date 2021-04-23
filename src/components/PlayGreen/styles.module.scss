@@ -1,0 +1,13 @@
+.button {
+  // width: 2.5rem;
+  // height: 2.5rem;
+  border-radius: 0.625rem;
+  font-size: 0;
+  border: 1px solid var(--gray-100);
+  background-color: white;
+  align-self: flex-end;
+
+  img {
+    width: 1.5625rem;
+  }
+}

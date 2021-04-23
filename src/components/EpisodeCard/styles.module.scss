@@ -1,0 +1,67 @@
+.card {
+  border-radius: 1.5rem;
+  border: 1px solid var(--gray-100);
+  background-color: white;
+  display: flex;
+  padding: 1.25rem;
+  gap: 1rem;
+  width: 100%;
+
+  img.thumbnail {
+    border-radius: 1.5rem;
+    width: 6rem;
+    height: 6rem;
+  }
+
+  a {
+    text-overflow: ellipsis;
+    width: 30.5rem;
+    white-space: nowrap;
+    display: block;
+    overflow: hidden;
+  }
+
+  & > div {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    gap: 1rem;
+    width: 100%;
+
+    div {
+      display: flex;
+      justify-content: space-between;
+      gap: 1rem;
+
+        div {
+          display: flex;
+          flex-direction: column;
+          gap: 0.5rem;
+          
+          div {
+            display: flex;
+            flex-direction: row;
+            align-items: center;
+            justify-content: flex-start;
+
+            span:first-child {
+              text-transform: capitalize;
+            }
+
+            .dot {
+              width: 0.25rem;
+              height: 0.25rem;
+              border-radius: 50%;
+              background-color: #DDDDDD;
+            }
+          }
+        }
+    }
+  }
+
+  span {
+    color: var(--gray-500);
+    font-size: 0.875rem;
+  }
+
+}
