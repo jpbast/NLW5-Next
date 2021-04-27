@@ -77,7 +77,7 @@ export default function Home(props: HomeProps) {
 }
 
 export const getStaticProps: GetStaticProps = async () => {
-  const episodes = await fetch('http://localhost:3333/episodes')
+  const episodes = await fetch('https://json-server-podcastr.herokuapp.com/episodes')
     .then(res => res.json())
     .then(data => data)
     .catch(err => err)

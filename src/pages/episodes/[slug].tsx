@@ -65,7 +65,7 @@ export default function EpisodePage({ data }: HomeProps) {
 }
 
 export const getStaticPaths: GetStaticPaths = async () => {
-  const episodes = await fetch('http://localhost:3333/episodes/')
+  const episodes = await fetch('https://json-server-podcastr.herokuapp.com/episodes/')
     .then(res => res.json())
     .then(data => data)
     .catch(err => err)
@@ -90,7 +90,7 @@ export const getStaticPaths: GetStaticPaths = async () => {
 export const getStaticProps: GetStaticProps = async (ctx) => {
   const { slug } = ctx.params
 
-  const episode = await fetch(`http://localhost:3333/episodes/${slug}`)
+  const episode = await fetch(`https://json-server-podcastr.herokuapp.com/episodes/${slug}`)
     .then(res => res.json())
     .then(data => data)
     .catch(err => err)
