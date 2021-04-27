@@ -6,6 +6,8 @@ A aplicação está totalmente desenvolvida e funcional. Foi muito importante a 
 
 Static Site Generation foi o principal conceito abordado e utilizado neste projeto, fundamental nos dias de hoje.
 
+App: https://podcastr-jpbast.vercel.app/
+
 ## Tecnologias utilizadas
 
 - HTML
